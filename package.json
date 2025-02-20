@@ -2,6 +2,23 @@
   "name": "angular-electron-app",
   "version": "0.0.0",
   "main": "main.js",
+  "config": {
+    "forge": {
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "Guru7135",
+              "name": "angular-electron-app"
+            },
+            "prerelease": false,
+            "draft": true
+          }
+        }
+      ]
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
